@@ -224,8 +224,8 @@
         }
 
         .teacher-img {
-            width: 80px;
-            height: 80px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid white;
@@ -248,10 +248,23 @@
             display: block;
         }
 
-        .teacher-details .email {
+        .teacher-details a.email {
             font-size: 0.95rem;
-            font-weight: 400;
-            opacity: 0.9;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 5px;
+            padding: 4px 12px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            transition: var(--transition);
+        }
+
+        .teacher-details a.email:hover {
+            background-color: var(--accent-color);
+            color: white;
+            transform: translateY(-2px);
         }
 
         /* ==========================================================================
@@ -888,7 +901,7 @@
                 <div class="teacher-details">
                     <strong>Docente Titular</strong>
                     <span>M.Sc. Martha Cecilia Bohórquez Eusse</span>
-                    <div class="email">mbohorquez@ulasalle.edu.bo</div>
+                    <a href="https://outlook.office.com/mail/deeplink/compose?to=mbohorquez@ulasalle.edu.bo" class="email" target="_blank" title="Enviar correo vía Office.com">✉ mbohorquez@ulasalle.edu.bo</a>
                 </div>
             </div>
 
@@ -1163,19 +1176,12 @@
                     <!-- ==========================================
                          BOTÓN 1: CLASES GRABADAS
                          ========================================== -->
-                    <!-- INSTRUCCIÓN: Reemplaza "AQUI_COLOCARE_EL_LINK_DE_CLASES_GRABADAS" con tu URL real -->
-                    <a href="office.sharpoint.com" class="action-card" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.ulasalle.edu.bo" class="action-card" target="_blank" rel="noopener noreferrer">
                         <div class="img-placeholder">
-                            
-                            <!-- INSTRUCCIÓN: Reemplaza "AQUI_COLOCARE_LA_IMAGEN_DE_CLASES" con la ruta de tu imagen -->
-                            <!-- El código onerror muestra el texto temporal si la imagen no existe -->
                             <img src="CLASES.png" alt="Clases Grabadas" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                            
                             <div class="placeholder-text" style="display: none;">
-                                ESPACIO PARA IMAGEN<br>CLASES GRABADASS
-                                <span class="placeholder-sub">(Reemplazar enlace e imagen en el código)</span>
+                                ESPACIO PARA IMAGEN<br>CLASES GRABADAS
                             </div>
-                            
                         </div>
                         <div class="action-title">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
@@ -1186,18 +1192,12 @@
                     <!-- ==========================================
                          BOTÓN 2: TAREAS
                          ========================================== -->
-                    <!-- INSTRUCCIÓN: Reemplaza "AQUI_COLOCARE_EL_LINK_DE_TAREAS" con tu URL real -->
-                    <a href="www.ulasalle.edu.bo" class="action-card" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.ulasalle.edu.bo" class="action-card" target="_blank" rel="noopener noreferrer">
                         <div class="img-placeholder">
-                            
-                            <!-- INSTRUCCIÓN: Reemplaza "AQUI_COLOCARE_LA_IMAGEN_DE_TAREAS" con la ruta de tu imagen -->
                             <img src="TAREA.png" alt="Entrega de Tareas" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                            
                             <div class="placeholder-text" style="display: none;">
-                                ESPACIOSS PARA IMAGEN<br>TAREAS
-                                <span class="placeholder-sub">(Reemplazar enlace e imagen en el código)</span>
+                                ESPACIO PARA IMAGEN<br>TAREAS
                             </div>
-                            
                         </div>
                         <div class="action-title">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
